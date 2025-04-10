@@ -1,0 +1,43 @@
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.55);
+  border-radius: 36px;
+  padding: 8px 2px 2px;
+  margin: 0 auto 14px;
+  background-color: rgba(22, 128, 195, 0.75);
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.userName {
+  margin-bottom: 3px;
+}
+
+.buttonContact {
+  margin: 5px auto 4px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: rgba(4, 98, 156, 0.9);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttonContact:hover,
+.buttonContact:focus {
+  background-color: white;
+  color: #1e27d4;
+}
+
+.buttonContact:active {
+  background-color: #1e27d4;
+  color: white;
+}

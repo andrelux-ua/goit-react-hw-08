@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fixedHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 5px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  width: 100%;
+  max-width: 100%;
+}
+
+.titleLayout {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.errorMessage {
+  text-align: center;
+  color: rgb(255, 215, 21);
+  text-shadow: 1px 1px 10px rgba(4, 8, 238, 0.8);
+  padding: 5px 10px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  background-color: rgba(94, 164, 234, 0.8);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.425);
+  margin-bottom: 5px;
+}
