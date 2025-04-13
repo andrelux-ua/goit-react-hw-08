@@ -1,0 +1,25 @@
+.userMenu {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.greetingUser {
+  display: inline;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.logout {
+  border-radius: 12px;
+  border: none;
+}
+
+.logout:hover {
+  background-color: #d9534f;
+  color: white;
+}
+.logout:active {
+  background-color: #5bc0de;
+  color: white;
+}
