@@ -4,8 +4,8 @@ const ConfirmModal = ({ name, onConfirm, onCancel }) => {
   return (
     <div className={css.overlay}>
       <div className={css.modal}>
-        <p>
-          Delete contact <strong>{name}</strong>?
+        <p className={css.text}>
+          Are you sure you want to delete <strong>{name}</strong>?
         </p>
         <div className={css.actions}>
           <button onClick={onConfirm} className={css.confirm}>

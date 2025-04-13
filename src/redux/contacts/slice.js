@@ -3,7 +3,7 @@ import {
   fetchContacts,
   addContact,
   deleteContact,
-  updateContact, // ← додаємо тут
+  updateContact,
 } from '../contacts/operations';
 import { selectNameFilter } from '../filters/slice';
 

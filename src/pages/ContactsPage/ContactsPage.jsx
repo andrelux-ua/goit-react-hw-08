@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from '../../redux/auth/operations';
 import { selectIsError, selectIsLoading } from '../../redux/contacts/slice';
-// import css from './ContactsPage.module.css';
 import css from '../../components/App/App.module.css';
 
 const ContactsPage = () => {

@@ -1,20 +1,20 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-// Установка базового URL
+
 axios.defaults.baseURL = 'https://connections-api.goit.global';
 
-// Додаємо токен до заголовків
+
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
-// Видаляємо токен із заголовків
+
 const clearAuthHeader = () => {
   delete axios.defaults.headers.common.Authorization;
 };
 
-// ==== Contacts Operations ====
+
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',
@@ -58,7 +58,7 @@ export const deleteContact = createAsyncThunk(
   }
 );
 
-// ==== Auth Operations ====
+
 
 export const register = createAsyncThunk(
   'auth/register',
