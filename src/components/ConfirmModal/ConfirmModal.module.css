@@ -1,0 +1,39 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: #fff;
+  color: #000;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.confirm {
+  background-color: #d9534f;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.cancel {
+  background-color: #5bc0de;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border: none;
+}
