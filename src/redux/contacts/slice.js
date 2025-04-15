@@ -1,11 +1,13 @@
 import { createSelector, createSlice, isAnyOf } from '@reduxjs/toolkit';
+import { logout } from '../auth/operations';
+
 import {
   fetchContacts,
   addContact,
   deleteContact,
   updateContact,
 } from '../contacts/operations';
-import { selectNameFilter } from '../filters/slice';
+import { selectNameFilter } from '../filters/selectors';
 
 export const selectIsError = state => state.contacts.isError;
 export const selectIsLoading = state => state.contacts.isLoading;
@@ -30,6 +32,12 @@ const contactsSlice = createSlice({
       .addCase(deleteContact.fulfilled, (state, action) => {
         state.items = state.items.filter(item => item.id !== action.payload);
       })
+      .addCase(logout.fulfilled, state => {
+        state.items = [];
+        state.isLoading = false;
+        state.isError = false;
+      })
+
       .addCase(updateContact.fulfilled, (state, action) => {
         const index = state.items.findIndex(
           item => item.id === action.payload.id
